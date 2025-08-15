@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* --- your tokens (keep as-is) --- */
+
 @theme {
   --bg: #0b1220;
   --text: #e5e7eb;
@@ -20,6 +20,8 @@ body { @apply antialiased; background: var(--bg); color: var(--text); }
 
 /* ✨ Important: undo Vite starter centering */
 #root { margin: 0; padding: 0; text-align: left; }
+
+main {background: transparent; }
 
 /* Base type scale */
 @layer base {

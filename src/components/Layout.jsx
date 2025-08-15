@@ -1,3 +1,4 @@
+
 import { Link, NavLink, Outlet } from 'react-router-dom'
 
 function Header() {
@@ -26,17 +27,16 @@ function Footer() {
   )
 }
 
-export default function Layout() {
-  return (
-    <div className="min-h-dvh flex flex-col">
-      <Header />
-      <main className="flex-1">
-        {/* mx-auto centers; px adds side padding; py adds breathing room; space-y adds vertical rhythm for stacked sections */}
-        <div className="mx-auto max-w-6xl px-4 py-12 space-y-12"> 
-          <Outlet />
-        </div>
-      </main>
-      <Footer />
-    </div>
-  )
-}
+ export default function Layout() {
+   return (
+    <div className="min-h-dvh flex flex-col relative bg-transparent">
+       <Header />
+      <main className="flex-1 relative z-10 bg-transparent">
+        <div className="mx-auto max-w-6xl px-4 py-12 space-y-12 bg-transparent">
+           <Outlet />
+         </div>
+       </main>
+       <Footer />
+     </div>
+   )
+ }

@@ -12,7 +12,10 @@ export default function Home() {
         <a href="https://github.com/..." className="btn-ghost">GitHub</a>
         <a href="https://www.linkedin.com/in/..." className="btn-ghost">LinkedIn</a>
       </div>
-    
+      <div className="h-40 border border-white/20 rounded-2xl grid place-items-center">
+  You should see particles behind this box.
+</div>
+
 
       {/* Example card using our token utilities */}
       <div className="card p-6 mt-6">
